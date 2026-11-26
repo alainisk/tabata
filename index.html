@@ -433,14 +433,14 @@
   <dialog id="family-dialog" class="app-dialog" aria-labelledby="family-title">
     <h2 id="family-title">Your workout account</h2>
     <p>Keep your workouts across devices and choose who can see them.</p>
-    <form id="account-form">
-      <label for="account-username">Username</label><input id="account-username" class="editor-input" autocomplete="username" required pattern="[a-zA-Z0-9_]{3,24}" minlength="3" maxlength="24" placeholder="e.g. alain_fit">
+    <form id="account-form" autocomplete="on">
+      <label for="account-username">Username</label><input id="account-username" name="username" type="text" class="editor-input" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required pattern="[a-zA-Z0-9_]{3,24}" minlength="3" maxlength="24" placeholder="e.g. alain_fit">
       <p class="input-hint">3–24 letters, numbers or underscores. Usernames are not case-sensitive.</p>
-      <div id="account-email-row" hidden><label for="account-email">Email for password recovery</label><input id="account-email" type="email" class="editor-input" autocomplete="email" maxlength="254"></div>
-      <label for="account-password">Password</label><input id="account-password" type="password" class="editor-input" autocomplete="current-password" required maxlength="256">
+      <div id="account-email-row" hidden><label for="account-email">Email for password recovery</label><input id="account-email" name="email" type="email" class="editor-input" autocomplete="email" autocapitalize="none" autocorrect="off" spellcheck="false" maxlength="254"></div>
+      <label for="account-password">Password</label><input id="account-password" name="password" type="password" class="editor-input" autocomplete="current-password" required maxlength="256">
       <div class="dialog-actions"><button id="account-submit" class="btn-primary" type="submit">Log in</button><button id="account-mode" class="btn-secondary" type="button">Create an account</button></div>
     </form>
-    <details id="account-reset"><summary>Forgot your password?</summary><form id="reset-form"><label for="reset-email">Account email</label><input id="reset-email" type="email" class="editor-input" required autocomplete="email"><button class="btn-secondary" type="submit">Send reset email</button></form></details>
+    <details id="account-reset"><summary>Forgot your password?</summary><form id="reset-form" autocomplete="on"><label for="reset-email">Account email</label><input id="reset-email" name="email" type="email" class="editor-input" required autocomplete="email" autocapitalize="none" autocorrect="off" spellcheck="false"><button class="btn-secondary" type="submit">Send reset email</button></form></details>
     <div id="account-connected" hidden><p id="account-name"></p><p>Workouts are private until you share them. Uploaded media is stored in Railway; YouTube and Vimeo videos play from their original sites.</p><div class="dialog-actions"><button id="family-sync-now" class="btn-primary">Sync now</button><button id="account-import-device" class="btn-secondary">Import device workouts</button><button id="account-logout" class="btn-secondary">Log out</button></div><p>Import device workouts copies the older library saved in this browser into this account. Originals stay on this device. Logging out removes this account’s offline library from this browser.</p></div>
     <p id="family-status" role="status"></p><p id="cloud-status" role="status"></p>
     <p><a href="./privacy.html" target="_blank" rel="noopener">Privacy</a></p>

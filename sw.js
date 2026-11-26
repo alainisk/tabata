@@ -1,4 +1,4 @@
-const CACHE_NAME = 'als-timer-v19';
+const CACHE_NAME = 'als-timer-v20';
 const ASSETS = ['./cloud-config.js?v=20260913-12', './account-sync.js?v=20260913-12', './account-media.js?v=20260913-12', './sync-merge.js?v=20260913-12', './video-sources.js?v=20260913-12', './stopwatch-32.png', './stopwatch-180.png', './stopwatch-192.png', './stopwatch-512.png', './index.html', './styles.css', './redesign.css?v=20260913-12', './app.js?v=20260913-12', './manifest.json?v=20260913-12'];
 
 self.addEventListener('install', e => {
